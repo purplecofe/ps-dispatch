@@ -120,7 +120,7 @@ local function Shooting()
     local gender = GetPedGender()
     local PlayerPed = PlayerPedId()
     local CurrentWeapon = GetSelectedPedWeapon(PlayerPed)
-    local speed = math.floor(GetEntitySpeed(vehicle) * 2.236936) .. " MPH" -- * 3.6 = KMH    /    * 2.236936 = MPH
+    local speed = math.floor(GetEntitySpeed(vehicle) * 3.6) .. " KMH" -- * 3.6 = KMH    /    * 2.236936 = MPH
     local weapon = WeaponTable[CurrentWeapon] or "UNKNOWN"
 
     TriggerServerEvent("dispatch:server:notify", {
